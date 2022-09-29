@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import CheckBox from './components/CheckBox';
 
 export default function App() {
+  const [meat, setmeat] = useState(false)
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Do not like mobile dev one bit</Text>
+      <CheckBox
+        onPress = {() => setmeat(!meat)}
+        title = "meat"
+        isChecked={meat}
+      />
+
       <StatusBar style="auto" />
     </View>
   );
