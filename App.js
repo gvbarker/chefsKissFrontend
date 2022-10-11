@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import  CheckBox  from './components/CheckBox.js';
-import BoxCategory from './components/BoxCategory';
-import CategoryDisplayBox from './components/CategoryDisplayBox.js';
+import  CheckBox  from './src/components/CheckBox.js';
+import BoxCategory from './src/components/BoxCategory';
+import CategoryDisplayBox from './src/components/CategoryDisplayBox.js';
 
 export default function App() {
-  state = {
-    meat : ['Chicken','Beef','Sausage','Lamb','Fish'],
-    meatChecks : [false,false,false,false,false],
-  };
-
+  
   const meats = ['Chicken','Beef','Sausage','Lamb','Fish']
   const checks = [false,false,false,false,false]
   const [meat, setMeat] = useState([])
