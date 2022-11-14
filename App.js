@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import  CheckBox  from './src/components/CheckBox.js';
 import BoxCategory from './src/components/BoxCategory';
 import CategoryDisplayBox from './src/components/CategoryDisplayBox.js';
-
+import Btest from './src/components/Btest.js';
 export default function App() {
   
   const meats = ['Chicken','Beef','Sausage','Lamb','Fish']
@@ -24,7 +24,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Do not like mobile</Text>
-      <CategoryDisplayBox/>
+      <Btest></Btest>
+      <Text>not one bit</Text>
       <StatusBar style="auto" />
     </View>
   );
