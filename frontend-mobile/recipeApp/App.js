@@ -24,6 +24,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Do not like mobile</Text>
+      <CategoryDisplayBox/>
       <Btest></Btest>
       <Text>not one bit</Text>
       <StatusBar style="auto" />

@@ -1,0 +1,20 @@
+/* This is the formatting for the homepage... and some other pages */
+body {
+    background-color: #c7271b;
+}
+
+.home {
+    background-color: #c7271b;
+    color: white;
+    padding: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .recipe {
+    background-color: #c7271b;
+    color: white;
+    font-size: large;
+    text-align: left;
+  }

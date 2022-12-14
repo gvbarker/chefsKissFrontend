@@ -4,7 +4,7 @@ import {Alert, FlatList, View, Text} from 'react-native';
 function Btest() {
     const [data, setData] = useState([{id:1, title:"test", ingredients:"test", instructions:"test"}])
     useEffect(()=> {
-        fetch('http://10.30.82.60:4444/api/recipes/', {
+        fetch('http://10.30.82.90:4444/api/recipes/', {
             method:"GET"
         })
 
