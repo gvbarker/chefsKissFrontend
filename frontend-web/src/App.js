@@ -7,6 +7,7 @@ import Recipes from "./pages/Recipes";
 import Favorites from "./pages/Favorites";
 import Dietpage from "./pages/Dietpage";
 import Login from "./pages/Login";
+import Test from "./pages/test.js";
 
 // Routing
 import { Route, Routes } from "react-router-dom";
@@ -22,6 +23,7 @@ function App() {
         <Route  path="/recipes" element={<Recipes />} />
         <Route  path="/dietpage" element={<Dietpage />} />
         <Route  path="/favorites" element={<Favorites />} />
+        <Route path="/test" element = {<Test/>}/>
       </Routes>
     </div>
   );
