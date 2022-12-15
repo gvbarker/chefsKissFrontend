@@ -11,14 +11,12 @@ function CategoryDisplayBox ({list}) {
     const [ingred, setIngred] = useState([]);
     useEffect(()=>{
         setIngred(list);
-    },[list]);
-    console.log(ingred)
-    
+    },[list]);    
     
 
 
     return (
-        <BoxCategory key="meats" data={ingred} onChange={setIngred}></BoxCategory>
+        <BoxCategory  data={ingred} onChange={setIngred}></BoxCategory>
     )
 
 

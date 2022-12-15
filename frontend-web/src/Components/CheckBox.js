@@ -5,7 +5,6 @@ function CheckBox(
       onChange,
       name,
       index,
-      key
     }) {
 
 

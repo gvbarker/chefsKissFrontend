@@ -127,10 +127,12 @@ export default function Recipes() {
       <input type="checkbox"  />Almond Butter
       <input type="checkbox"  />Butter
       <input type="checkbox"  />Peanut Butter<br></br>
+      
       Dairy:<br></br>
       <input type="checkbox"  />Cheese
       <input type="checkbox"  />Eggs
       <input type="checkbox"  />Milk<br></br>
+      
       Grains:<br></br>
       <input type="checkbox"  />Brown rice
       <input type="checkbox"  />Bread
