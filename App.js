@@ -1,34 +1,26 @@
-import React, { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import  CheckBox  from './src/components/CheckBox.js';
-import BoxCategory from './src/components/BoxCategory';
-import CategoryDisplayBox from './src/components/CategoryDisplayBox.js';
+import React from 'react';
+import {StatusBar} from 'expo-status-bar';
+import {StyleSheet, View} from "react-native";
+
+import Navigation from './src/navigation';
+import {NavigationContainer} from '@react-navigation/native';
+
+
 
 export default function App() {
-  
-  const meats = ['Chicken','Beef','Sausage','Lamb','Fish']
-  const checks = [false,false,false,false,false]
-  const [meat, setMeat] = useState([])
-
-  const checkboxHandler = (event) => {
-    const {value, checked} = e;
-    if (checked) {
-      setMeat(prev => [...prev, value]);
-    } else {
-      setMeat(prev => prev.filter(x => x!==value));
-    }
-  }
-  
-  
   return (
-    <View style={styles.container}>
-      <Text>Do not like mobile</Text>
-      <CategoryDisplayBox/>
-      <StatusBar style="auto" />
+    <View style={styles2.root}>
+      <Navigation/>
+      <StatusBar style="auto"/>
     </View>
   );
 }
+const styles2 = StyleSheet.create({
+  root:{
+    flex: 1,
+    backgroundColor: '#F9FBFC'
+  },
+});
 
 const styles = StyleSheet.create({
   container: {
